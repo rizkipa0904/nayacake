@@ -1,0 +1,80 @@
+@extends('layout/main')
+
+@section('title', 'Register')
+
+@section('container')
+<div class="container">
+    <div class="row justify-content-center" id="register">
+        <div class="col-6">
+        <h1 class="h2 fw-normal text-center mt-5"><br>Register</h1>
+        <h5 class="h5 fw-normal text-center mt-2">Create your free account now and enter a world of privileges!</h5>
+
+        <form method="post" action="/register">
+            @csrf
+        
+            <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="" name="name"
+             value="{{old('name') }}">
+            @error('name')
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">{{$message }}</div>
+            @enderror
+            </div>
+
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="" name="email"
+             value="{{old('email') }}">
+            @error('email')
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">{{$message }}</div>
+            @enderror
+            </div>
+
+            <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="text" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="" name="password"
+             value="{{old('password') }}">
+            @error('password')
+            <div id="validationServerpasswordFeedback" class="invalid-feedback">{{$message }}</div>
+            @enderror
+            </div>
+
+
+            <div class="mb-3">
+            <label for="alamat" class="form-label">Address</label>
+            <input type="text" class="form-control @error('alamat') is-invalid @enderror" id="alamat" placeholder="" name="alamat"
+             value="{{old('alamat') }}">
+            @error('alamat')
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">{{$message }}</div>
+            @enderror
+            </div>
+            
+            <div class="mb-3">
+            <label for="nohp" class="form-label">Phone</label>
+            <input type="text" class="form-control @error('nohp') is-invalid @enderror" id="nohp" placeholder="" name="nohp"
+             value="{{old('nohp') }}">
+            @error('nohp')
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">{{$message }}</div>
+            @enderror
+            </div>
+
+            <div class="form-group">
+            <label for="exampleFormControlSelect1">Level</label>
+            <select name="level" class="form-control" id="exampleFormControlSelect1">
+            <option value="">- Select -</option>
+            <!-- <option value="admin">Admin</option> -->
+            <option value="user">User</option>
+            <!-- <option value="superadmin">SuperAdmin</option> -->
+            </select>
+            </div>
+            
+
+            <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Register</button>
+            <small class="d-block text-center mt-3">Already Registered? <a href="/login">Login<a></small>
+            
+        </form>
+        </div>
+    </div>
+</div>
+ 
+@endsection
