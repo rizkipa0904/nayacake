@@ -14,14 +14,14 @@
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="images/gambar4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item active" >
+            <img src="images/gambar4.jpg" class="d-block w-100" alt="..." id="crsl">
             </div>
             <div class="carousel-item">
-            <img src="images/gambar2.jpg" class="d-block w-100" alt="...">
+            <img src="images/gambar2.jpg" class="d-block w-100" alt="..." id="crsl" >
             </div>
             <div class="carousel-item">
-            <img src="images/gambar3.jpg" class="d-block w-100" alt="...">
+            <img src="images/gambar3.jpg" class="d-block w-100" alt="..." id="crsl">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -45,7 +45,7 @@
                             <img src="images/gambar1.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
-                                    <h4>Owl Carousel</h4>
+                                    <h4>Whole Cakes</h4>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                             <img src="images/gambar3.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
-                                    <h4>Owl Carousel</h4>
+                                    <h4>Cup Cakes</h4>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             <img src="images/gambar4.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
-                                    <h4>Owl Carousel</h4>
+                                    <h4>Slice Cakes</h4>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                             <img src="images/gambar2.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
-                                    <h4>Owl Carousel</h4>
+                                    <h4>Cookies</h4>
                                 </div>
                             </div>
                         </div>
@@ -101,11 +101,34 @@
                             </div>
                         </div>
                     </div>
+                    
+             
 
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="footer-content">
+      <h3>Naya Cake</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           Ducimus numquam nostrum at beatae consequuntur deserunt quos
+           velit mollitia dignissimos neque, officiis odit aliquam soluta, maxime debitis aut?
+           Animi, sit voluptas.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+      <div class="footer-bottom">
+      <p>copyright &copy2022 NayaCake</p>
+     </div>
+</footer>
+
+<script src="//code.tidio.co/lji0i41mao2gfgurpmjrhilxctsie8po.js" async></script>
 
 @endsection

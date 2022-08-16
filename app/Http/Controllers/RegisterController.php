@@ -12,8 +12,6 @@ class RegisterController extends Controller
     {
         // $roles=DB::table('users')->get('role');
 
-        
-
         return view('register.index');
     }
 

@@ -42,7 +42,13 @@
 
 .navbar{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover{
+  background-color:#F5F5DC;
+  border-radius:10%;
 }
 
 .form-signin{
@@ -63,6 +69,113 @@
   font-size: 15px;
 }
 
+.form-signin .h2{
+  font-weight:bold;
+}
+
+#bgregister{
+  background-color:#FFFAF0;
+}
+
+#cardlogin{
+  background-color:#FFFAF0;
+}
+
+footer{
+  background: #FFFAF0;
+  height: auto;
+  width: 100vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 40px;
+  color: #000000;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: #DEB887;
+}
+
+.footer-bottom{
+  background: #FFEBCD;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+#about{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleControls{
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+}
+
+#crsl{
+  border-radius: 25px;
+}
 
 
 

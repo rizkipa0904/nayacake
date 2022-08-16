@@ -33,7 +33,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar navbar-light fixed-top">
     <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
       <!-- <img src="images/logomy1.png" alt="" width="50" height="35"> -->
@@ -47,7 +47,6 @@
            <a class="nav-link" href="{{ url('/tentang') }}">About</a> 
         </div>
 
-      
         @auth
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -56,11 +55,12 @@
  
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
+      
             <a class="nav-link" href="{{ url('check-out') }}">
                                     <i class="bi bi-cart4"></i>
                                     @if(!empty($notif))
-                                    <span class="badge badge-danger">1</span>
-                                    @endif
+                                    <span class="badge badge-danger text-dark">{{ $notif }}</span>
+                                    @endif                   
             </a>
         </li>
             
@@ -73,9 +73,11 @@
               <a class="dropdown-item" href="{{ url('profile') }}"><i class="bi bi-person"></i> 
                 Profile
               </a>
+              @if(auth()->user()->level == 'admin')
               <a class="dropdown-item" href="{{ url('history') }}"><i class="bi bi-journal-text"></i> 
                 History
               </a>
+              @endif
               <form action="/logout" method="post">
                   @csrf
                   <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-in-right"></i> Logout</button>

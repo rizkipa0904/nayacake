@@ -59,6 +59,8 @@
                             </tr>
                         </tbody>
                     </table>
+                    @elseif($pesanan == null)
+                    <h3><i class="bi bi-cart4"></i> CheckOut</h3>
                     @endif
                 </div>
             </div>

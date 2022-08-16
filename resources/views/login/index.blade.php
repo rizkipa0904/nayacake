@@ -21,25 +21,37 @@
         @endif
 
             <main class="form-signin">
-                <h1 class="h3 mt-5 fw-normal text-center">Login</h1>
-        <form action="/login" method="post">
-            @csrf
-            <div class="form-floating">
-            <input type="email" name="email"class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required
-            value="{{ old('email') }}">
-            <label for="email">Email</label>
-            @error('email')
-            <div class="invalid-feedback">
-                {{ $message }}
-            </div>
-            @enderror
-            </div>
-            <div class="form-floating">
-            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary mt-2" type="submit">Login</button>
-        </form>
+                <p class="h2 mt-5 text-center">Welcome!</p>
+                <p class="h5 mt-2 text-center">Enter your email and password to login</p>
+
+                        <div class="card" id="cardlogin" >
+                            <div class="card-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                            <form action="/login" method="post">
+                                            @csrf
+                                            <div class="form-floating mt-4">
+                                            <input type="email" name="email"class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required
+                                            value="{{ old('email') }}">
+                                            <label for="email">Email</label>
+                                            @error('email')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                            @enderror
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                                            <label for="password">Password</label>
+                                            </div>
+                                            <button class="w-100 btn btn-lg btn-primary mt-2 mb-4" type="submit">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
         <small class="d-block text-center mt-3">Not Registered? <a href="/register">Register Now!<a></small>
         </main>
     </div>
